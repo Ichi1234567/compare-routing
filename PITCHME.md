@@ -25,7 +25,7 @@
 
 ### Next.js vs. Rails
 
-+++?code=codes/next-routing-table.js&title=Next.js - Routing Table
+---?code=codes/next-routing-table.js&title=Next.js - Routing Table
 
 @title[Next.js]
 
@@ -47,7 +47,7 @@
 @[6-9](use [router api](https://github.com/fridays/next-routes#router-example))
 @[12-14](history.back or use Link Componet)
 
-+++?code=codes/rails-routing-table.rb&title=Rails - Routing Table
+---?code=codes/rails-routing-table.rb&title=Rails - Routing Table
 
 @title[Rails]
 
@@ -72,7 +72,7 @@
 
 ### Experimental vs. React-Navigation
 
-+++?code=codes/exp-component.js&title=Experimental - Routing Table
+---?code=codes/exp-component.js&title=Experimental - Routing Table
 
 @[1](define enterance Component)
 @[70-76](use Experimental)
@@ -97,7 +97,7 @@
 * [NavigationCard.js](https://github.com/aksonov/react-native-experimental-navigation/blob/master/NavigationCard.js)
 * https://en.wikipedia.org/wiki/Proxy_pattern
 
-+++?code=codes/nav-component.js&title=React-Navigation - Routing Table
+---?code=codes/nav-component.js&title=React-Navigation - Routing Table
 
 @[1](define enterance Component)
 @[28-30](use React-Navigation)
@@ -124,61 +124,33 @@
 * https://en.wikipedia.org/wiki/Facade_pattern
 
 ---
-
+ 
 ### React-Router v3 vs. v4
 
-+++
+---?code=codes/v3-routing-table.js&title=React-Router v3 - Routing Table
 
 @title[React-Router v3]
 
-### React-Router v3
++++?code=codes/v3-v4-Link.js&title=React-Router v3 - Link
 
-routing table（routing component）
++++?code=codes/v3-client.js&title=React-Router v3 - Client
 
-+++
++++?code=codes/v3-server.js&title=React-Router v3 - Server
 
-Link Componet
-
-use browser history
-
----
+---?code=codes/v4-routing-tble.js&title=React-Router v4 - Routing Table
 
 @title[React-Router v4]
 
-### React-Router v4
++++?code=codes/v4-routing-table.js&title=React-Router v4 - Routing Table
 
-routing table
++++?code=codes/v3-v4-Link.js&title=React-Router v4 - Link
 
-- routing component
++++?code=codes/v4-client.js&title=React-Router v4 - Client
 
-- routing config
++++?code=codes/v4-config.js&title=React-Router v4 - Config
 
-+++
++++?code=codes/v4-server.js&title=React-Router v4 - Server
 
-Link Componet
-
-use browser history
-
-+++
-
-#### React-Router v3 vs. v4
-
-routing table
-
-server
-
-client
-
-
----
-
-###  React-Router vs. React-Navigation
-
-+++
-
-#### React-Router vs. React-Navigation
-
-all Component vs. data trigger
 
 ---
 
@@ -186,23 +158,42 @@ all Component vs. data trigger
 
 ### React-Native-Web
 
-* How to use browser history with react-navigation
++++
 
-* location
+###  React-Router vs. React-Navigation
 
 +++
 
-#### React-Router v4 vs. React-Navigation
+### React-Navigation
 
-routing config
+* createStackNavigator, createTabbarNavigator, createDrawerNavigator...
 
-redux - data flow
+* pass parameters
+  * this.props.navigation.navigate(routename, params)
+
+* use dispatch navigation actions
+
++++
+
+### React-Router
+
+* Client and Server
+  * BrowserRouter
+  * match, http server
+
+* pass parameters
+  * pass by query of url
+  * by Component
+
+* history
+
++++
+
+https://github.com/react-navigation/react-navigation-web/blob/master/src/react-navigation-web.js
 
 +++
 
 * wrapper browser history for react-navigation？
-
+* native, server, client
 * browser go back vs. customize go back
-
 * code splitting？
-
