@@ -10,7 +10,7 @@
 
 ![routing](assets/images/routing.png)
 
----
++++
 
 ![routing](assets/images/routing2.png)
 
@@ -21,59 +21,48 @@
   * server, client
 * Navigation Actions
 
-+++?code=codes/next-routing-table.js
++++?code=codes/next-routing-table.js&title=Next.js - Routing Table
 
 @title[Next.js]
 
-### Next.js - Routing Table
+@[3-4](defined routing)
 
-@[3-4] defined routing
++++?code=codes/next-render-server.js&title=Next.js - Server
 
-+++?code=codes/next-render-server.js
+@[2](import routing table)
+@[6-10](listen with express)
 
-### Next.js - Server
++++?code=codes/next-render-client.js&title=Next.js - Client
 
-@[2] import routing table
-@[6-10] listen with express
+@[2](use Link defined from routing table)
+@[4-8](render the Component)
 
-+++?code=codes/next-render-client.js
++++?code=codes/next-actions.js&title=Next.js - Navigation Actions
 
-### Next.js - Client
+@[2](import Router from routing table)
+@[6-9](use [router api](https://github.com/fridays/next-routes#router-example))
+@[12-14](history.back or use Link Componet)
 
-@[2] use Link defined from routing table
-@[4-8] render the Component
-
-+++?code=codes/next-next-actions.js
-
-### Next.js - Navigation Actions
-
-@[2] import Router from routing table
-@[6-9] use [router api](https://github.com/fridays/next-routes#router-example)
-@[12] history.back or use Link Componet
-
-+++?code=codes/rails-routing-table.rb
++++?code=codes/rails-routing-table.rb&title=Rails - Routing Table
 
 @title[Rails]
 
-### Rails - routing table
+@[4-11](define routes, will call action of controller)
 
-@[4-11] define routes, will call action of controller
++++?code=codes/rails-controller.rb&title=Rails - Controller and Actions
 
-+++?code=codes/rails-controller.rb
+@[17-40](use destroy as an example)
+@[21](define format)
+@[25](go to users#index and change url)
+@[28](render users#edit but not change url)
 
-### Rails - Controller and Actions
++++?code=codes/rails-link-to.html.erb&title=Rails - helpers
 
-@[17-40] use destroy as an example
-@[21] define format
-@[25] go to users#index and change url
-@[28] render users#edit but not change url
+@[1-11](use link_to)
 
-+++?code=codes/rails-link-to.html.erb
++++?code=codes/rails-button-to.html.erb&title=Rails - helpers
 
-### Rails - helpers
-
-@[1-15] use button_to
-@[17-27] use link_to
+@[1-15](use button_to)
 
 ---
 
