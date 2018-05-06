@@ -21,6 +21,10 @@
   * server, client
 * Navigation Actions
 
+---
+
+### Next.js vs. Rails
+
 +++?code=codes/next-routing-table.js&title=Next.js - Routing Table
 
 @title[Next.js]
@@ -68,37 +72,56 @@
 
 ### Experimental vs. React-Navigation
 
-+++
++++?code=codes/exp-component.js&title=Experimental - Routing Table
 
-@title[React-Navigation-Experimental]
+@[1](define enterance Component)
+@[70-76](use Experimental)
+@[45-53](header definition)
+@[2-15](right header definition)
+@[17-29](left header definition)
+@[31-43](center header definition)
+@[55-68](content definition)
 
-### React-Navigation-Experimental
++++?code=codes/exp-actions.js&title=Experimental - Routing Actions
 
-proxy image
-
-+++
-
-redux
-
----
-
-@title[React-Navigation]
-
-### React-Navigation
-
-image
+@[2-4](import utils)
+@[18](call function)
+@[21](call function)
 
 +++
 
-redux
+### Design Pattern of Experimental
+
+![exp-sceneview](assets/images/exp-sceneview.png)
+
+* [NavigationCard.js](https://github.com/aksonov/react-native-experimental-navigation/blob/master/NavigationCard.js)
+* https://en.wikipedia.org/wiki/Proxy_pattern
+
++++?code=codes/nav-component.js&title=React-Navigation - Routing Table
+
+@[1](define enterance Component)
+@[28-30](use React-Navigation)
+@[2-25](define all screen)
+
++++?code=codes/nav-actions.js&title=React-Navigation - Routing Actions
+
+@[1](import utils)
+@[3-8](dispatch and call function)
 
 +++
 
-#### React-Navigation-Experimental vs. React-Navigation
+### Design Pattern of React-Navigation
 
-proxy image compare
+![nav-renderscene.js](assets/images/nav-renderscene.png)
 
-navigate function
+* [StackViewLayout](https://github.com/react-navigation/react-navigation/blob/master/src/views/StackView/StackViewLayout.js)
+
++++
+
+![nav-getcomponent](assets/images/nav-getcomponent.png)
+
+* [StackRouter.js](https://github.com/react-navigation/react-navigation/blob/master/src/routers/StackRouter.js)
+* https://en.wikipedia.org/wiki/Facade_pattern
 
 ---
 
