@@ -137,6 +137,30 @@
 
 +++?code=codes/v3-server.js&title=React-Router v3 - Server
 
++++
+
+@div[left-80]
+![contextprovider](assets/images/v3-contextprovider.png)
+@divend
+
+@div[right-20]
+	@ul
+		* [ContextUtils.js](https://github.com/ReactTraining/react-router/blob/v3/modules/ContextUtils.js)
+	@ulend
+@divend
+
++++
+
+@div[left-80]
+![mixin](assets/images/v3-mixin.png)
+@divend
+
+@div[right-20]
+	@ul
+		* [RouterContext.js](https://github.com/ReactTraining/react-router/blob/v3/modules/RouterContext.js)
+	@ulend
+@divend
+
 ---?code=codes/v4-routing-tble.js&title=React-Router v4 - Routing Table
 
 @title[React-Router v4]
@@ -151,6 +175,53 @@
 
 +++?code=codes/v4-server.js&title=React-Router v4 - Server
 
++++
+
+@div[left-80]
+![v4-router-context](assets/images/v4-router-context.png)
+@divend
+
+@div[right-20]
+	@ul
+		* [Router.js](https://github.com/ReactTraining/react-router/blob/master/packages/react-router/modules/Router.js)
+	@ulend
+@divend
+
++++
+
+@div[left-80]
+![v4-switch](assets/images/v4-switch.png)
+@divend
+
+@div[right-20]
+	@ul
+		* [Router.js](https://github.com/ReactTraining/react-router/blob/master/packages/react-router/modules/Router.js)
+	@ulend
+@divend
+
++++
+
+@div[left-80]
+![v4-browser-router](assets/images/v4-browser-router.png)
+@divend
+
+@div[right-20]
+	@ul
+		* [BrowserRouter.js](https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/modules/BrowserRouter.js)
+	@ulend
+@divend
+
++++
+
+@div[left-80]
+![v4-static-router](assets/images/v4-static-router.png)
+@divend
+
+@div[right-20]
+	@ul
+		* [StackRouter.js](https://github.com/ReactTraining/react-router/blob/master/packages/react-router/modules/StaticRouter.js)
+	@ulend
+@divend
 
 ---
 
