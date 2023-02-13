@@ -1,6 +1,4 @@
-## in GitPitch
-
-[slides in gitpitch](https://gitpitch.com/ichi1234567/compare-routing)
+https://ichi1234567.github.io/presentaions/compare-routing/compare-routing/
 
 ## Other References
 
